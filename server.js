@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 
-var PORT = 3000;
+//First port is for heroku, 2nd is for local
+var PORT = process.env.PORT || 3000;
 
 var middleware = require('./middleware.js')
 
